@@ -1,0 +1,71 @@
+body{
+    text-align: center;
+  }
+  button{
+    cursor: pointer;
+    background-color: blue; /* Cor de fundo */
+    color: white; /* Cor do texto */
+    border: none; /* Sem borda */
+    border-radius: 25px; /* Bordas arredondadas */
+    padding: 15px 30px; /* Espaçamento interno */
+    font-size: 16px; /* Tamanho da fonte */
+    cursor: pointer; /* Muda o cursor ao passar o mouse */
+    transition: background-color 0.3s; /* Efeito de transição */
+    
+  }
+  
+  label {
+    width: 400px; /* Defina uma largura fixa */
+    font-weight: bold; /* Deixe o texto em negrito */
+    color: black;
+  }
+  
+  input {
+    width: 300px; /* Mesma largura que o label */
+    padding: 8px; /* Espaçamento interno */
+    border: 1px solid #ccc; /* Borda padrão */
+    border-radius: 8px; /* Bordas arredondadas */
+  }
+  .container {
+    text-align: center;
+    width: 24%;               /* Define a largura do container */
+    margin: 0 auto;           /* Centraliza o container horizontalmente */
+    padding: 20px;            /* Adiciona um espaço interno */
+    background-color: #f4f4f4; /* Cor de fundo para o container */
+    box-sizing: border-box;   /* Garante que o padding não afete a largura total */
+  }
+  
+  /* Estilo para os boxes dentro do container */
+  .box {
+    width: 90%;               /* Define a largura do box */
+    padding: 20px;            /* Adiciona um espaço interno no box */
+    margin: 10px;             /* Espaço entre os boxes */
+    background-color: #f5f5f5; /* Cor de fundo dos boxes */
+    color: rgb(0, 0, 0);             /* Cor do texto dentro do box */
+    border-radius: 8px;       /* Bordas arredondadas */
+    box-sizing: border-box;   /* Garante que o padding não afete a largura total */
+  }
+  
+  /* Faz os boxes ficarem lado a lado */
+  .container {
+    display: flex;
+    flex-wrap: wrap;           /* Permite que os boxes quebrem para a linha seguinte, se necessário */
+    justify-content: space-between; /* Espalha os boxes com espaço entre eles */
+  }     
+  button{
+    cursor: pointer;
+    background-color: red; /* Cor de fundo */
+    color: white; /* Cor do texto */
+    border: none; /* Sem borda */
+    border-radius: 25px; /* Bordas arredondadas */
+    padding: 15px 30px; /* Espaçamento interno */
+    font-size: 16px; /* Tamanho da fonte */
+    cursor: pointer; /* Muda o cursor ao passar o mouse */
+    transition: background-color 0.3s; /* Efeito de transição */
+}
+select{
+    width: 320px; /* Mesma largura que o label */
+    padding: 8px; /* Espaçamento interno */
+    border: 1px solid #ccc; /* Borda padrão */
+    border-radius: 8px; /* Bordas arredondadas */
+  }

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+   <h1>Cadastrar Leitor</h1>
+   <div class="container">
+     <div class="box">
+         <form action="cadastra-prato.php" method="post">
+         <div>
+            <label for="N0me"></label><br>
+            <input type="text" id="Nome" name="Nome" placeholder="Nome" required/>
+         </div>
+         <div>
+            <label for="Descricao"></label><br>
+            <input type="text" id="Descricao" name="Descricao" placeholder="Descrição" required />
+         </div>
+         <div>
+            <label for="categoria">Categoria:</label><br>
+            <select id="categoria" name="categoria" required>
+                <option value="entrada">Entrada</option>
+                <option value="prato_principal">Prato Principal</option>
+                <option value="sobremesa">Sobremesa</option>
+            </select>
+         </div>  
+         <div>
+            <label for="Foto"></label><br>
+            <input type="text" id="Foto" name="Foto" placeholder="Foto (por .png no final)" required/>
+         </div>
+         <div>
+            <label for="Preco"></label><br>
+            <input type="number" id="Preco" name="Preco" placeholder="Preço" required/>
+         </div>
+
+         <div>
+            <button type="submit"> Cadastrar </button>
+         </div>
+         </form>
+         <a href='index-adm.html'><button tittle = 'Home Page'>Voltar</button></a>
+     </div>
+   </div>
+
+
+    
+</body>
+</html>
