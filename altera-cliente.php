@@ -14,20 +14,20 @@
      <div class ="box">
      <?php
 
-$servername = "restaurante"; // seu servidor de banco de dados
-$username = "dbvital"; // seu usuário do banco de dados
-$password = "1235"; // sua senha do banco de dados
-$dbname = "dbrestaurante_vf89"; // nome do seu banco de dados
 
-// Cria a conexão
-$conn = new mysqli($servername, $username, $password, $dbname);
+$host = 'mysql-vital-db.onrender.com'; // host fornecido pela Render
+$user = 'dbvital';
+$pass = '1235';
+$dbname = 'dbrestaurante_vital';
+$port = 3306;
 
+$conn = new mysqli($host, $user, $pass, $dbname, $port);
 
-
-// Checa a conexão
 if ($conn->connect_error) {
-    die("Conexão falhou: " . $conn->connect_error);
+    die("Connection failed: " . $conn->connect_error);
 }
+echo "Connected successfully";
+
     $id = isset($_POST['id'])? (int)$_POST['id'] : null;
     
     if ($id > 0) {

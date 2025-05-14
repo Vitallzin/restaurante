@@ -1,5 +1,5 @@
 <?php
-session_start(); // Inicia a sessão
+
 $servername = "restaurante"; // seu servidor de banco de dados
 $username = "dbvital"; // seu usuário do banco de dados
 $password = "1235"; // sua senha do banco de dados

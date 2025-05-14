@@ -1,10 +1,16 @@
 <?php
-$servername = "restaurante"; // seu servidor de banco de dados
-$username = "dbvital"; // seu usuário do banco de dados
-$password = "1235"; // sua senha do banco de dados
-$dbname = "dbrestaurante_vf89"; // nome do seu banco de dados
+$host = 'mysql-vital-db.onrender.com'; // host fornecido pela Render
+$user = 'dbvital';
+$pass = '1235';
+$dbname = 'dbrestaurante_vital';
+$port = 3306;
 
+$conn = new mysqli($host, $user, $pass, $dbname, $port);
 
+if ($conn->connect_error) {
+    die("Connection failed: " . $conn->connect_error);
+}
+echo "Connected successfully";
 try {
     $pdo = new PDO("mysql:host=$host;dbname=$db", $user, $pass);
     $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
