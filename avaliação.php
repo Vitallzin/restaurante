@@ -1,14 +1,5 @@
 <?php
-// Configurações do banco de dados
-$host = 'localhost'; // ou o endereço do seu servidor
-$db = 'db_restaurante';
-$user = 'root'; // substitua pelo seu usuário do MySQL
-$pass = ''; // substitua pela sua senha do MySQL
-
-// Conecta ao banco de dados
-$conn = new mysqli($host, $user, $pass, $db);
-
-
+session_start(); // Inicia a sessão
 $servername = "restaurante"; // seu servidor de banco de dados
 $username = "dbvital"; // seu usuário do banco de dados
 $password = "1235"; // sua senha do banco de dados
