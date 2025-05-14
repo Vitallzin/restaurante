@@ -4,8 +4,8 @@ FROM php:8.1-cli
 RUN docker-php-ext-install mysqli
 
 # Copia os arquivos do projeto
-COPY . /usr/src/myapp
-WORKDIR /usr/src/myapp
+COPY . /var/www/html
+WORKDIR /var/www/html
 
 # Expõe a porta que será usada
 EXPOSE 8000
