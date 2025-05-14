@@ -19,7 +19,7 @@ $host = 'mysql-vital-db.onrender.com'; // host fornecido pela Render
 $user = 'dbvital';
 $pass = '1235';
 $dbname = 'dbrestaurante_vital';
-$port = 5432; // porta padrão do MySQL
+$port = 3306; // porta padrão do MySQL
 
 $conn = new mysqli($host, $user, $pass, $dbname, $port);
 
